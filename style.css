@@ -1461,7 +1461,7 @@ img {
     margin-bottom: 0.5rem;
 }
 
-/* === RESPONSIVE STYLES === 
+/* === RESPONSIVE STYLES === */
 @media screen and (max-width: 991px) {
     .home-content {
         flex-direction: column;
@@ -1535,10 +1535,6 @@ img {
         background-color: var(--light-color);
     }
 
-    .toggle-label{
-        width: 100%;
-        left: -70%;
-    }
     
     .nav-links.active {
         left: 0;
@@ -1596,11 +1592,11 @@ img {
     .contact-info {
         margin-bottom: 2rem;
     }
-}*/
+}
 
 /* === RESPONSIVE STYLING === */
 
-/* General responsiveness for screens smaller than 1024px */
+/* General responsiveness for screens smaller than 1024px 
 @media (max-width: 1024px) {
     .home-content {
         flex-direction: column;
@@ -1626,7 +1622,7 @@ img {
     }
 }
 
-/* Narrow screens (768px and below) */
+ Narrow screens (768px and below) 
 @media (max-width: 768px) {
     .container {
         padding: 0 1rem;
@@ -1684,4 +1680,4 @@ img {
     .home-image {
         max-width: 250px;
     }
-}
+}*/
