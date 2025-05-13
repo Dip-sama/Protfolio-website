@@ -1461,7 +1461,7 @@ img {
     margin-bottom: 0.5rem;
 }
 
-/* === RESPONSIVE STYLES === */
+/* === RESPONSIVE STYLES === 
 @media screen and (max-width: 991px) {
     .home-content {
         flex-direction: column;
@@ -1595,5 +1595,93 @@ img {
     
     .contact-info {
         margin-bottom: 2rem;
+    }
+}*/
+
+/* === RESPONSIVE STYLING === */
+
+/* General responsiveness for screens smaller than 1024px */
+@media (max-width: 1024px) {
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .resume-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Narrow screens (768px and below) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .about-text p,
+    .project-info p {
+        font-size: 0.9rem;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        display: none; /* Consider a hamburger menu for navigation */
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+/* Very narrow screens (480px and below) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .home-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-image {
+        max-width: 250px;
     }
 }
