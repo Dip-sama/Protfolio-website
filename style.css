@@ -1576,27 +1576,7 @@ img {
 
 @media screen and (max-width: 576px) {
 
-.nav-links {
-        position: fixed;
-        top: 70px;
-        left: -100px;
-        width: 100%;
-        flex-direction: column;
-        background-color: white;
-        padding: 2rem;
-        box-shadow: var(--shadow-md);
-        transition: var(--transition);
-        height: calc(100vh - 70px);
-        overflow-y: auto;
-        gap: 2rem;
-        z-index: 99;
-    }
-    
-
-.toggle-label{
-        
-        left: -70px;
-    }
+.nav
     .home-text h1 {
         font-size: 2rem;
     }
