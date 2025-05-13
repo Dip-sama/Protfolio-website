@@ -1518,7 +1518,7 @@ img {
     .nav-links {
         position: fixed;
         top: 70px;
-        left: -100px;
+        left: -100%;
         width: 100%;
         flex-direction: column;
         background-color: white;
@@ -1536,7 +1536,7 @@ img {
     }
 
     .toggle-label{
-        
+        width: 100%;
         left: -70%;
     }
     
@@ -1576,7 +1576,7 @@ img {
 
 @media screen and (max-width: 576px) {
 
-.nav
+
     .home-text h1 {
         font-size: 2rem;
     }
