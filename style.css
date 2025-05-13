@@ -1646,7 +1646,7 @@ img {
     }
 
     .nav-links {
-        display: none; /* Consider a hamburger menu for navigation */
+        display: none; 
     }
 
     .hamburger {
@@ -1662,7 +1662,7 @@ img {
     }
 }
 
-/* Very narrow screens (480px and below) */
+Very narrow screens (480px and below) 
 @media (max-width: 480px) {
     body {
         font-size: 14px;
