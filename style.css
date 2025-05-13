@@ -1518,7 +1518,7 @@ img {
     .nav-links {
         position: fixed;
         top: 70px;
-        left: -100%;
+        left: -100px;
         width: 100%;
         flex-direction: column;
         background-color: white;
@@ -1579,7 +1579,7 @@ img {
 .nav-links {
         position: fixed;
         top: 70px;
-        left: -100%;
+        left: -100px;
         width: 100%;
         flex-direction: column;
         background-color: white;
@@ -1595,7 +1595,7 @@ img {
 
 .toggle-label{
         
-        left: -70%;
+        left: -70px;
     }
     .home-text h1 {
         font-size: 2rem;
