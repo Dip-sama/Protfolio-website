@@ -1535,7 +1535,8 @@ img {
     }
 
     .dark-mode .nav-links {
-        background-color: var(--light-color);
+        background-color:#a0acc9;
+
     }
 
     .toggle-label{
@@ -1548,6 +1549,7 @@ img {
     
     .hamburger {
         display: block;
+        background-color:#a0acc9;
     }
     
     .hamburger.active .bar:nth-child(1) {
