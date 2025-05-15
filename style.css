@@ -1576,6 +1576,9 @@ img {
         font-size: 2rem;
         margin-bottom: 3rem;
     }
+    .marquee-item {
+     left:310%;
+    }
 }
 
 @media screen and (max-width: 576px) {
