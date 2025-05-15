@@ -1533,15 +1533,13 @@ img {
         gap: 2rem;
         z-index: 99;
     }
-     .dark-mode-toggle {
-    width: 20%;
-}
+
     .dark-mode .nav-links {
         background-color: var(--light-color);
     }
 
     .toggle-label{
-        left: -70%;
+        left: -305%;
     }
     
     .nav-links.active {
