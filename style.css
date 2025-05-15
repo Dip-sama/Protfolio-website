@@ -1533,13 +1533,14 @@ img {
         gap: 2rem;
         z-index: 99;
     }
-    
+     .dark-mode-toggle {
+    width: 20%;
+}
     .dark-mode .nav-links {
         background-color: var(--light-color);
     }
 
     .toggle-label{
-        width: 20%;
         left: -70%;
     }
     
@@ -1578,10 +1579,9 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-    .toggle-label{
-        width: 20%;
-        
-    }
+  .dark-mode-toggle {
+    width: 20%;
+}
      .navbar{
         width: 25%;
     }
