@@ -1,6 +1,6 @@
-/* === GLOBAL STYLES === 
+/* === GLOBAL STYLES === */
 :root {
-    /* Modern Color Schema 
+    /* Modern Color Schema */
     --primary-color: #6366f1;
     --primary-dark: #4f46e5;
     --primary-light: #a5b4fc;
@@ -11,15 +11,15 @@
     --light-color: #f8fafc;
     --gray-color: #94a3b8;
     
-    /* Typography 
+    /* Typography */
     --font-primary: 'Poppins', sans-serif;
     --font-secondary: 'Montserrat', sans-serif;
     
-    /* Transitions 
+    /* Transitions */
     --transition: all 0.3s ease-in-out;
     --transition-slow: all 0.5s ease-in-out;
     
-    /* Box Shadow 
+    /* Box Shadow */
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -120,7 +120,7 @@ img {
     display: block;
 }
 
-/* === LOADING ANIMATION === 
+/* === LOADING ANIMATION === */
 .loading-screen {
     position: fixed;
     top: 0;
@@ -153,7 +153,7 @@ img {
     100% { transform: rotate(360deg); }
 }
 
-/* === DARK MODE TOGGLE === 
+/* === DARK MODE TOGGLE === */
 .dark-mode-toggle {
     position: fixed;
     top: 1.5rem;
@@ -208,7 +208,7 @@ img {
     background-color: var(--dark-color-light);
 }
 
-/* === NAVIGATION === 
+/* === NAVIGATION === */
 .navbar {
     position: fixed;
     top: 0;
@@ -309,7 +309,7 @@ img {
     background-color: var(--light-color);
 }
 
-/* === BUTTONS === 
+/* === BUTTONS === */
 .btn {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -374,7 +374,7 @@ img {
     margin-right: 0.5rem;
 }
 
-/* === HOME SECTION === 
+/* === HOME SECTION === */
 .home-section {
     min-height: 100vh;
     display: flex;
@@ -542,7 +542,7 @@ img {
     right: -10px;
 }
 
-/* === ABOUT SECTION === 
+/* === ABOUT SECTION === */
 .section-title {
     text-align: center;
     font-size: 2.5rem;
@@ -663,7 +663,7 @@ img {
     color: var(--primary-color);
 }
 
-/* === SKILLS SECTION === 
+/* === SKILLS SECTION === */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -735,8 +735,7 @@ img {
 }
 
  
-        /* Marquee animation 
-        /* .tech-marquee {
+         .tech-marquee {
             margin-top: 60px;
             position: relative;
             height: 70px;
@@ -787,7 +786,7 @@ img {
             }
         } 
 
-/* === PROJECTS SECTION === 
+/* === PROJECTS SECTION === */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -919,7 +918,7 @@ img {
     margin-top: 2rem;
 }
 
-/* === RESUME SECTION === 
+/* === RESUME SECTION === */
 .resume-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1028,7 +1027,7 @@ img {
     margin-top: 3rem;
 }
 
-/* === BLOG SECTION === 
+/* === BLOG SECTION === */
 .blog-posts {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1128,7 +1127,7 @@ img {
     color: var(--gray-color);
 }
 
-/* === CONTACT SECTION === 
+/* === CONTACT SECTION === */
 .contact-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1271,7 +1270,7 @@ img {
     width: 100%;
 }
 
-/* === BACK TO TOP BUTTON === 
+/* === BACK TO TOP BUTTON === */
 .back-to-top {
     position: fixed;
     bottom: 2rem;
@@ -1304,7 +1303,7 @@ img {
     box-shadow: var(--shadow-lg);
 }
 
-/* === FOOTER === 
+/* === FOOTER === */
 .footer {
     background-color: var(--dark-color);
     color: white;
