@@ -749,7 +749,7 @@ img {
 
 .marquee-content {
   display: flex;
-  animation: marquee 40s linear infinite;
+  animation: marquee 10s linear infinite;
 }
 
 @keyframes marquee {
@@ -1511,14 +1511,14 @@ img {
         padding: 0 1rem;
     }
     .navbar{
-        width: 26%;
+        width: 55%;
     }
     
     .nav-links {
         position: fixed;
         top: 70px;
         left: -100%;
-        width: 100%;
+        width: 50%;
         flex-direction: column;
         background-color: white;
         padding: 2rem;
@@ -1536,7 +1536,7 @@ img {
     }
 
     .toggle-label{
-        left: -50%;
+        left: -40%;
     }
     
     .nav-links.active {
@@ -1616,7 +1616,7 @@ img {
 
 .marquee-content {
   display: flex;
-  animation: marquee 20s linear infinite;
+  animation: marquee 10s linear infinite;
 }
 
 @keyframes marquee {
