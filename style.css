@@ -1518,7 +1518,7 @@ img {
         position: fixed;
         top: 70px;
         left: -100%;
-        width: 26%;
+        width: 100%;
         flex-direction: column;
         background-color: white;
         padding: 2rem;
@@ -1536,7 +1536,7 @@ img {
     }
 
     .toggle-label{
-        left: -305%;
+        left: -50%;
     }
     
     .nav-links.active {
