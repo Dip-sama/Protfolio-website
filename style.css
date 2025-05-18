@@ -1607,4 +1607,50 @@ img {
     .contact-info {
         margin-bottom: 2rem;
     }
+/* ===== SKILLS SECTION RESPONSIVE STYLES ===== */
+#skills {
+  background-color: #f9f9f9;
+  padding: 8rem 0;
+}
+
+.tech-marquee {
+  overflow: hidden;
+  margin: 4rem 0;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-item {
+  flex-shrink: 0;
+  padding: 1rem 3rem;
+  margin: 0.5rem;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10rem;
+}
+
+@media (max-width: 768px) {
+  .marquee-item {
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+    min-width: 8rem;
+  }
+}
 }
