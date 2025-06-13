@@ -1579,3 +1579,45 @@ img {
         margin-bottom: 2rem;
     }
 }
+* Mobile-specific adjustments */
+@media screen and (max-width: 576px) {
+    .skills-section {
+        padding: 3rem 0;
+    }
+    
+    .carousel-container {
+        height: 250px; /* Even smaller on very small devices */
+    }
+    
+    .center-circle {
+        width: 70px;
+        height: 70px;
+        font-size: 0.7rem;
+    }
+    
+    .skill-item {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .skill-item img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .skill-item .skill-name {
+        display: none; /* Hide names on very small screens */
+    }
+    
+    .tooltip {
+        bottom: -30px;
+        font-size: 9px;
+        padding: 3px 6px;
+    }
+}
+
+/* Adjust rotation radius for smaller screens */
+@media screen and (max-width: 768px) {
+    /* This will be handled in the JavaScript */
+}
+
