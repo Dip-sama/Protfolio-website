@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="style.css"> 
-<!--<link rel="stylesheet" href="responsive.css"> -->
 </head>
 <body>
     <!-- Loading Animation -->
@@ -28,7 +27,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo">Dip<span>Sama</span></a>
+            <a href="#" class="logo">Dip<span>Sama</span></a>
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -101,44 +100,85 @@
         </div>
     </section>
 
-  <!-- Skills Section HTML 
-<section id="skills" class="section">
+ <!-- Inside your HTML, after the About section and before the Projects section -->
+<section id="skills" class="skills-section">
     <div class="container">
-        <h2 class="section-title">My Skills</h2>
-
-        
-        <!-- Technology Marquee 
-        <div class="tech-marquee">
-            <div class="marquee-content">
-                <div class="marquee-item">HTML5</div>
-                <div class="marquee-item">CSS3</div>
-                <div class="marquee-item">JavaScript</div>
-                <div class="marquee-item">React</div>
-                <div class="marquee-item">Redux</div>
-                <div class="marquee-item">Node.js</div>
-                <!-- <div class="marquee-item">Express</div> 
-                <div class="marquee-item">MongoDB</div>
-                <div class="marquee-item">SQL</div>
-                <div class="marquee-item">Firebase</div>
-                <div class="marquee-item">GraphQL</div>
-                <div class="marquee-item">Git</div>
-                <div class="marquee-item">Docker</div>
-                <div class="marquee-item">AWS</div>
-                <div class="marquee-item">TypeScript</div>
-                <!-- <div class="marquee-item">Sass</div>
-                <div class="marquee-item">Jest</div> 
-                <div class="marquee-item">Webpack</div>
-                <div class="marquee-item">Tailwind CSS</div>
-                <div class="marquee-item">Bootstrap</div>
-                <div class="marquee-item">Material UI</div>
-                <div class="marquee-item">C</div>
-                <div class="marquee-item">Python</div>
-            </div>
+        <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+        <div class="carousel-container">
+            <div class="center-circle">My Skills</div>
+            <!-- Skill items will be added here by JavaScript -->
         </div>
     </div>
-</section>-->
+</section>
+<script>
+    // Add this to your existing script.js file
+document.addEventListener('DOMContentLoaded', function() {
+    // Skills Carousel
+    const initSkillsCarousel = () => {
+        const skills = [
+            { name: "HTML", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", description: "HyperText Markup Language" },
+            { name: "CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", description: "Cascading Style Sheets" },
+            { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", description: "Programming language for the web" },
+            { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", description: "JavaScript library for building UIs" },
+            { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", description: "JavaScript runtime environment" },
+            { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", description: "High-level programming language" },
+            { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", description: "Version control system" },
+            { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", description: "Containerization platform" }
+        ];
 
+        const container = document.querySelector('.carousel-container');
+        if (!container) return;
 
+        const radius = 180;
+        const centerX = container.offsetWidth / 2;
+        const centerY = container.offsetHeight / 2;
+        
+        // Create skill items
+        skills.forEach((skill, index) => {
+            const angle = (index / skills.length) * 2 * Math.PI;
+            const x = centerX + radius * Math.cos(angle) - 40;
+            const y = centerY + radius * Math.sin(angle) - 40;
+            
+            const skillItem = document.createElement('div');
+            skillItem.className = 'skill-item';
+            skillItem.style.left = `${x}px`;
+            skillItem.style.top = `${y}px`;
+            
+            skillItem.innerHTML = `
+                <img src="${skill.logo}" alt="${skill.name}">
+                <span class="skill-name">${skill.name}</span>
+                <span class="tooltip">${skill.description}</span>
+            `;
+            
+            container.appendChild(skillItem);
+        });
+        
+        // Animation function
+        function animate() {
+            const skillItems = document.querySelectorAll('.skill-item');
+            if (skillItems.length === 0) return;
+            
+            let time = Date.now() * 0.001; // Get time in seconds
+            
+            skillItems.forEach((item, index) => {
+                const angle = (index / skills.length) * 2 * Math.PI + time * 0.5; // Add rotation over time
+                const x = centerX + radius * Math.cos(angle) - 40;
+                const y = centerY + radius * Math.sin(angle) - 40;
+                
+                item.style.left = `${x}px`;
+                item.style.top = `${y}px`;
+            });
+            
+            requestAnimationFrame(animate);
+        }
+        
+        animate();
+    };
+
+    // Initialize when page loads
+    initSkillsCarousel();
+});
+    </script>
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <div class="container">
@@ -228,7 +268,7 @@
                             <div class="timeline-content">
                                 <h4>BCA - Bachelor of Computer Applications</h4>
                                 <p class="timeline-date">2024 - 2028</p>
-                                <p>Dinabandhu Andrews Institute of Technology & Management </p>
+                                <p>Dinabandhu Andrews Institute</p>
                             </div>
                         </div>
                         <div class="timeline-item">
@@ -367,10 +407,10 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/Dip-sama" target="_blank" class="social-link" aria-label="GitHub">
+                        <a href="https://github.com/dipsama" target="_blank" class="social-link" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/dip-bhattacharjee-aa833430a/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <a href="https://linkedin.com/in/dipsama" target="_blank" class="social-link" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="https://youtube.com/dipsama" target="_blank" class="social-link" aria-label="YouTube">
@@ -417,8 +457,8 @@
                     <h3>Dip Bhattacharjee</h3>
                     <p>Web Developer & Student | Building the Future with Code</p>
                     <div class="footer-social">
-                        <a href="https://github.com/Dip-sama" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/dip-bhattacharjee-aa833430a/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
@@ -449,7 +489,6 @@
         </div>
     </footer>
 
-   <!-- <script src="script.js"></script>-->
-<script src="responsive.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
