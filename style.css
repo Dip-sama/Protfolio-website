@@ -1579,7 +1579,7 @@ img {
         margin-bottom: 2rem;
     }
 }
-* Mobile-specific adjustments */
+/* Mobile-specific adjustments */
 @media screen and (max-width: 576px) {
     .skills-section {
         padding: 3rem 0;
