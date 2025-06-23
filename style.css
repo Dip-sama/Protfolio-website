@@ -1956,7 +1956,7 @@ img {
         position: fixed;
         top: 70px;
         left: -100%;
-        width: 26%;
+        width: 20%;
         flex-direction: column;
         background-color: white;
         padding: 2rem;
