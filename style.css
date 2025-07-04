@@ -2207,7 +2207,7 @@ img {
         grid-template-columns: 1fr;
     }
     
-    .contact-content {
+/*     .contact-content {
         grid-template-columns: 1fr;
           height: 300px;
                 width: 300px;
@@ -2217,7 +2217,7 @@ img {
     .contact-info {
         margin-bottom: 2rem;
     }
-
+ */
     /* Adjust navbar height for smaller devices */
     .navbar {
         padding: 0.8rem 0;
@@ -2273,5 +2273,84 @@ img {
     .skill-item img {
         width: 20px;
         height: 20px;
+    }
+}
+/* === CONTACT SECTION MOBILE FIXES === */
+@media screen and (max-width: 576px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        padding: 1.5rem;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+    }
+    
+    .form-group i {
+        left: 0.8rem;
+    }
+    
+    /* Ensure form doesn't overflow on small screens */
+    .contact-form {
+        box-sizing: border-box;
+    }
+    
+    /* Fix textarea alignment */
+    .form-group textarea + i {
+        top: 1rem;
+    }
+}
+
+/* Extra small devices (phones, 400px and down) */
+@media screen and (max-width: 400px) {
+    .contact-info,
+    .contact-form {
+        padding: 1rem;
+    }
+    
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+    }
+}
+
+/* Fix for landscape orientation on mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .contact-section {
+        padding: 2rem 0;
+    }
+    
+    .contact-content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: 1rem;
     }
 }
