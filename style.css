@@ -1898,7 +1898,7 @@ img {
     margin-bottom: 0.5rem;
 }
 
-/* === RESPONSIVE STYLES === 
+/* === RESPONSIVE STYLES === */
 @media screen and (max-width: 991px) {
     .home-content {
         flex-direction: column;
@@ -2032,14 +2032,14 @@ img {
         margin-bottom: 2rem;
     }
 }
-/* Mobile-specific adjustments 
+/* Mobile-specific adjustments */
 @media screen and (max-width: 576px) {
     .skills-section {
         padding: 3rem 0;
     }
     
     .carousel-container {
-        height: 250px; /* Even smaller on very small devices 
+        height: 250px; /* Even smaller on very small devices */
     }
     
     .center-circle {
@@ -2059,7 +2059,7 @@ img {
     }
     
     .skill-item .skill-name {
-        display: none; /* Hide names on very small screens 
+        display: none; /* Hide names on very small screens */
     }
     
     .tooltip {
@@ -2069,210 +2069,7 @@ img {
     }
 }
 
-/* Adjust rotation radius for smaller screens 
+/* Adjust rotation radius for smaller screens */
 @media screen and (max-width: 768px) {
-    /* This will be handled in the JavaScript 
-}*/
-
-/* === RESPONSIVE STYLES === */
-@media screen and (max-width: 991px) {
-    .home-content {
-        flex-direction: column;
-    }
-    
-    .home-text {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
-    
-    .home-image {
-        margin: 0 auto;
-    }
-    
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .about-image {
-        margin-bottom: 2rem;
-    }
-    
-    .about-text {
-        text-align: center;
-    }
-    
-    .interests ul {
-        grid-template-columns: 1fr;
-    }
-    
-    .resume-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .resume-experience {
-        margin-top: 2rem;
-    }
+    /* This will be handled in the JavaScript */
 }
-
-@media screen and (max-width: 768px) {
-    section {
-        padding: 4rem 0;
-    }
-    
-    .navbar .container {
-        padding: 0 1rem;
-    }
-    
-    .nav-links {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 100%; /* Changed from 20% to 100% for full-width menu */
-        flex-direction: column;
-        background-color: white;
-        padding: 2rem;
-        box-shadow: var(--shadow-md);
-        transition: var(--transition);
-        height: calc(100vh - 70px);
-        overflow-y: auto;
-        gap: 2rem;
-        z-index: 99;
-        text-align: center; /* Center align menu items */
-    }
-    
-    .dark-mode .nav-links {
-        background-color: var(--dark-color-light);
-    }
-    
-    .nav-links.active {
-        left: 0;
-    }
-    
-    .hamburger {
-        display: block;
-        z-index: 100; /* Ensure hamburger is above other elements */
-    }
-    
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    
-    .home-text h1 {
-        font-size: 2.5rem;
-    }
-    
-    .typing-text {
-        font-size: 1.5rem;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-        margin-bottom: 3rem;
-    }
-
-    /* Fixed dark mode toggle positioning */
-    .dark-mode-toggle {
-        position: fixed;
-        top: 1.5rem;
-        right: 1.5rem;
-        z-index: 1000;
-        transform: none; /* Remove any previous transforms */
-        left: auto; /* Ensure left positioning is auto */
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .home-text h1 {
-        font-size: 2rem;
-    }
-    
-    .typing-text {
-        font-size: 1.2rem;
-    }
-    
-    .interests ul {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-content {
-        grid-template-columns: 1fr;
-          height: 300px;
-                width: 300px;
-        
-    }
-    
-    .contact-info {
-        margin-bottom: 2rem;
-    }
-
-    /* Adjust navbar height for smaller devices */
-    .navbar {
-        padding: 0.8rem 0;
-    }
-
-    .nav-links {
-        top: 60px;
-        height: calc(100vh - 60px);
-    }
-
-    /* Ensure dark mode toggle is properly positioned */
-    .dark-mode-toggle {
-        top: 1rem;
-        right: 1rem;
-    }
-}
-
-/* Very small devices (phones, 480px and down) */
-@media screen and (max-width: 480px) {
-    .home-text h1 {
-        font-size: 1.8rem;
-    }
-
-    .section-title {
-        font-size: 1.8rem;
-    }
-
-    .container {
-        padding: 0 1.5rem;
-    }
-
-    /* Adjust project card layout */
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Adjust skill items for very small screens */
-    .carousel-container {
-        height: 220px;
-    }
-
-    .center-circle {
-        width: 60px;
-        height: 60px;
-        font-size: 0.6rem;
-    }
-
-    .skill-item {
-        width: 45px;
-        height: 45px;
-    }
-
-    .skill-item img {
-        width: 20px;
-        height: 20px;
-    }
-}
-
